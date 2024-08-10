@@ -2,13 +2,14 @@ import threading
 import argparse
 from queue import Queue
 import subprocess
-from colorama import init
+#from colorama import init
 
 # from colorama - https://pypi.org/project/colorama/
-init()  
+#init()  
 
 # Instantiate the parser
-parser = argparse.ArgumentParser(description='JubJub : some sort of network swiss army knife')
+parser = argparse.ArgumentParser(
+    description='JubJub : some sort of network swiss army knife')
 
 # print help screen
 parser.add_argument('--sweep', action='store_true',
